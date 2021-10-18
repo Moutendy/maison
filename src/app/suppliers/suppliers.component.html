@@ -1,1 +1,21 @@
-<p>suppliers works!</p>
+
+<div class="container">
+  <h2>Bordered Table</h2>
+  <p>The .table-bordered class adds borders to a table:</p>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of suppliers">
+      <td>{{p.id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.email}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

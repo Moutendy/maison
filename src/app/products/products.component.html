@@ -1,1 +1,21 @@
-<p>products works!</p>
+
+<div class="container">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>Name</th>
+      <th>Prix</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{p.id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.prix}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
